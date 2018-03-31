@@ -2,7 +2,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
-   entry: './src/main.js',
+   entry: './src/grooming-score/boot.js',
    output: {
       path: __dirname + '/dist',
       filename: 'bundle.js',
@@ -23,7 +23,7 @@ var config = {
             }
          },
          {
-            test: /\.scss$/,
+            test: /\.s?css$/,
             loaders: ExtractTextPlugin.extract({
               fallback: 'style-loader',
               use: ['css-loader', 'sass-loader']
@@ -32,6 +32,6 @@ var config = {
       ]
    },
 
-   plugins: [new HtmlWebpackPlugin({title: 'Homework React Version', template: 'src/index.html'}), new ExtractTextPlugin('style.css')]
+   plugins: [new HtmlWebpackPlugin({title: 'Grooming Score', template: 'src/index.html'}), new ExtractTextPlugin('style.css')]
 }
 module.exports = config;

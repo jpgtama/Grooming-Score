@@ -1,0 +1,31 @@
+@import 'themeColors';
+
+$theme-font:    verdana, sans-serif;
+
+body {
+  font: $theme-font;
+  background-color: $themeColor-Light;
+  h1, h2 {
+      color: $themeColor-Dark
+  }
+}
+
+nav{
+  ul{
+        list-style-type: none;
+
+        li{
+          display: inline-block;
+          >*{
+            margin-left: 10px;
+          }
+        }
+
+  }
+
+}
+
+main{
+  padding:20px;
+  background-color: white;
+}

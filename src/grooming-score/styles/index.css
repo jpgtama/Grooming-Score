@@ -1,0 +1,49 @@
+.board{
+  border-color: lightblue;
+  border-width: 4px;
+  border-style: solid;
+  padding: 20px 48px;
+  display: inline-block;
+}
+
+.peopleList{
+  display: inline-block;
+}
+
+.row{
+  margin: 8px 0 8px 0;
+}
+
+.row .score{
+  margin-right: 24px;
+  padding: 16px;
+  display: inline-block;
+}
+
+.row .score.thirteen{
+  background-color: red;
+}
+.row .score.eight{
+  background-color: yellow;
+}
+.row .score.five{
+  background-color: yellow;
+}
+.row .score.three{
+  background-color: green;
+}
+.row .score.one{
+  background-color: green;
+}
+
+.row .avatar{
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  width:32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  vertical-align: middle;
+}

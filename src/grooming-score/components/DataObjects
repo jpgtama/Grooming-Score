@@ -1,0 +1,11 @@
+var dataObjects = {
+    UserProfile: {
+      name: '',
+      avatarUrl: ''
+    }
+
+
+};
+
+
+export default dataObjects;

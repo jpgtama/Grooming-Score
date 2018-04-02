@@ -36,14 +36,15 @@ class UserProfile extends React.Component{
     }
 
     render(){
+        var baseUrl = '/src/grooming-score/avatars/';
         var u = this.props.data.avatarUrl;
 
         var s = {
-            backgroundImage: {"url("+u+")"}
+            backgroundImage: "url("+baseUrl+u+")"
         };
 
         return (
-            <span class="avatar" style="{s}"></span>
+            <span className="avatar" style={s}></span>
         );
     }
 

@@ -6,9 +6,6 @@
   display: inline-block;
 }
 
-.peopleList{
-  display: inline-block;
-}
 
 .row{
   margin: 8px 0 8px 0;
@@ -36,7 +33,14 @@
   background-color: green;
 }
 
-.row .avatar{
+
+.row .peopleList{
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  padding: 4px;
+}
+
+.peopleList .avatar{
   display: inline-block;
   border-width: 1px;
   border-style: solid;
@@ -46,4 +50,8 @@
   background-repeat: no-repeat;
   background-size: 32px 32px;
   vertical-align: middle;
+}
+
+.peopleList .avatar:not(:first-child){
+  margin-left: 4px;
 }

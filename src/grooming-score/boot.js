@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PeopleList from './components/PeopleList.jsx';
+import Board from './components/Board.jsx';
 
 import  './styles/index.css';
 
 
 
-ReactDOM.render(<PeopleList/>, document.getElementById('app'));
+ReactDOM.render(<Board/>, document.getElementById('app'));

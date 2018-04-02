@@ -35,28 +35,13 @@ class PeopleList extends React.Component{
     render(){
 
 
-        var pl=[{
-          name: 'Mike',
-          avatarUrl: '001.jpg'
-        },{
-          name: 'Susan',
-          avatarUrl: '002.jpg'
-        },{
-          name: 'David',
-          avatarUrl: '003.jpg'
-        }];
+
 
 
         return (
-            <div className="board">
-              <div className="row">
-                <span className="score eight">8</span>
                 <div className="peopleList">
-                    {pl.map((d, i) => <UserProfile key={i}  data={d} />)}
+                    {this.props.data.map((d, i) => <UserProfile key={i}  data={d} />)}
                 </div>
-              </div>
-            </div>
-
         );
     }
 
